@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	font-size: 13px;
+	font-family: 'Roboto', sans-serif;
+	color: #363636;
+}
+
+.header {
+	background-color: #e8ebf1;
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.07);
+}
+
+.section {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.wrapper-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	padding: 36px 0 47px 0;
+}
+
+.nav {
+	color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-items {
+	display: flex;
+}
+
+.nav-item {
+  position: relative;
+  padding: 0 25px;
+}
+
+.nav-item:last-child {
+	padding: 0 0 0 25px;
+}
+
+.nav-items-dropdown .nav-item {  
+  padding: 0 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.nav-items-dropdown .nav-item:last-child {
+	border-bottom: none;
+}
+
+.nav-item-link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 35px;
+  display: block; 
+}
+
+.nav-item-link:hover {
+	color: #2aacc8;
+}
+
+.nav-items-dropdown .nav-item-link {
+	text-transform: none;
+}
+
+.nav-item .nav-items-dropdown {  
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: -1px;
+  width: 210px;
+  padding: 10px 5px 5px 5px;
+  text-transform: none;
+  border-bottom: 5px solid #2aacc8;
+  background-color: #fff;
+  border-right: 1px solid rgb(232, 235, 241);
+  border-left: 1px solid rgb(232, 235, 241);
+}
+
+.dropdown-list:hover {
+	background-color: #fff;
+	box-shadow: inset 0px 5px 0px 0px rgba(42, 172, 200);
+}
+
+.nav-item:hover .nav-items-dropdown {
+  display: block;
+  z-index: 1;
+}
+
+.box-banner {
+	background-color: #81e4ed;
+	padding: 30px 0;	
+}
+
+.banner {
+	height: 440px;
+	background: #e05936;
+	background-image: url('img/q.png'), url('img/cup.png');
+	background-repeat: no-repeat;
+	background-position: top right, center center;
+	position: relative;
+}
+
+.heading {
+	color: #fff;
+	font-size: 50px;
+	font-family: 'Lato', sans-serif;
+	width: 300px;
+	position: absolute;
+	top: 93px;
+	left: 63px;
+}
+
+.box-fourBlock {
+	background-color: #e8ebf1;
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.wrapper-flex {
+	display: flex;
+}
+
+.blue-box {
+	background-color: #e8fcfe;
+	border: 1px solid #81e4ed;
+	padding: 40px 45px 40px 25px;
+	margin: 45px 0;
+}
+
+.fourBlock {
+	margin: 60px 40px 50px 0;
+}
+
+.fourBlock:last-child {
+	margin: 60px 0 50px 0;
+}
+
+.title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.text {
+	line-height: 20px;
+	margin: 20px 0 30px 0;
+}
+
+.detail-link {
+	text-decoration: none;
+	color: #2aacc8;
+}
+
+.text-download {
+	font-size: 16px;
+	line-height: 26px;
+	margin-right: 80px;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+}
+
+.btnic {
+	width: 240px;
+	height: 60px;
+    color: #0d0707;
+    background: linear-gradient(#80e4ed, #33b1cc);
+    border: 1px solid #2aacc8;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+	background-color: #e8ebf1;
+	border-top: 1px solid rgba(0, 0, 0, .15);
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.wrapper-footer {
+	margin-top: 25px;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.text-footer {
+	line-height: 18px;
+	margin-right: 195px;
+}
+
+.arrow {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;   
+}
+
+.right {
+    transform: rotate(-45deg);
+    margin-bottom: 2px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.down {
+	color: #000;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.ellipse {
+	width: 40px;
+	height: 40px;
+	background-color: #2aacc8;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.title-fourBlock {
+	display: flex;
+	align-items: center;
+}
